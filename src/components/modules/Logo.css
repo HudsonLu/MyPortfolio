@@ -1,0 +1,18 @@
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.skill-icons svg {
+  font-size: 32px;
+  color: #b38d8d;
+  transition: transform 0.2s ease;
+}
+
+.skill-icons svg:hover {
+  transform: scale(1.2);
+
+  color: hsl(0, 0%, 0%); /* gold highlight */
+}
