@@ -4,37 +4,34 @@ import './modules/Logo.css';
 const skillCategories = [
   {
     title: 'Programming Languages',
-    skills: ['java', 'javascript', 'typescript', 'python']
+    skills: ['java', 'python', 'cs', 'cpp', 'javascript', 'typescript', 'html', 'css',], 
   },
   {
-    title: 'Frontend Development',
-    skills: ['react', 'nextjs', 'svelte']
-  },
-  {
-    title: 'Backend & Databases',
-    skills: ['postgres', 'supabase']
+    title: 'Web Development',
+    skills: ['react', 'nextjs', 'net', 'express', 'spring', 'postgres', 'mysql', 'firebase', 'mongodb', 'selenium', 'tailwind', 'materialui', 'bootstrap']
   },
   {
     title: 'Tools & Platforms',
-    skills: ['docker', 'linux']
+    skills: ['pytorch', 'tensorflow', 'docker', 'linux', 'vscode','anaconda', 'git', 'github', 'androidstudio', 'figma', 'postman']
   }
+
 ];
 
 function Logo() {
   return (
     <div className="logo">
       {skillCategories.map((category) => (
-        <div key={category.title}>
+        <div key={category.title} className="skill-category">
           <h2>{category.title}</h2>
           <div className="skill-icons">
             {category.skills.map((skill) => (
-              <img
-                key={skill}
-                src={`https://skillicons.dev/icons?i=${skill}&theme=light`}
-                alt={skill}
-                title={skill}
-                className="skill-icon"
-              />
+              <div key={skill} className="skill-card">
+                <img
+                  src={`https://skillicons.dev/icons?i=${skill}&theme=light`}
+                  alt={skill}
+                  title={skill}
+                />
+              </div>
             ))}
           </div>
         </div>

@@ -1,18 +1,37 @@
+.logo {
+  padding: 20px;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+}
+
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   margin-top: 10px;
 }
 
-.skill-icons svg {
-  font-size: 32px;
-  color: #b38d8d;
-  transition: transform 0.2s ease;
+.skill-card {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.skill-icons svg:hover {
-  transform: scale(1.2);
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-  color: hsl(0, 0%, 0%); /* gold highlight */
+.skill-card img {
+  width: 32px;
+  height: 32px;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './headerFooter.css';
+import './modules/headerFooter.css';
+
 
 function Header() {
   return (
@@ -8,6 +9,7 @@ function Header() {
       <div className="logo">
         <h1>My Portfolio</h1>
       </div>
+      
       <nav>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
